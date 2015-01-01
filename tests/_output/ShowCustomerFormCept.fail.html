@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>kamaroshop</title>
+ <meta name="description" content="Responsive Admin Web App">
+ <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <!-- Needs images, font... therefore can not be part of main.css -->
+  <link media="all" type="text/css" rel="stylesheet" href="http://localhost/packages/kamaro/templates/css/font-awesome.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="http://localhost/packages/kamaro/templates/css/themify-icons.min.css">
+
+       <!-- end Needs images -->
+  <link media="all" type="text/css" rel="stylesheet" href="http://localhost/packages/kamaro/templates/css/main.css">
+
+</head>
+    <body  class="app ng-scope" >
+        <!--[if lt IE 9]>
+            <div class="lt-ie9-bg">
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser.</p>
+                <p>Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            </div>
+        <![endif]-->
+<section    id="header" class="header-container header-fixed bg-white" >
+ <header class="top-header clearfix">
+
+    <!-- Logo -->
+    <div class="logo bg-dark" >
+        <a href="#">
+            <span class="ng-binding">kamaroshop</span>
+        </a>
+    </div>
+
+    <!-- needs to be put after logo to make it work -->
+    <div class="menu-button" toggle-off-canvas="">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </div>
+
+    <div class="top-nav">
+        <ul class="nav-left list-unstyled">
+            <li>
+                <a href="#" data-toggle-nav-collapsed-min="" class="toggle-min"><i class="ti-menu"></i></a>
+            </li>
+            <li class="dropdown hidden-xs" d>
+                <a href="javascript:;" class="dropdown-toggle" ><i class="ti-settings"></i></a>
+            </li>
+            <li class="dropdown hidden-xs" >
+                <a href="javascript:;"><i class="ti-paint-bucket"></i></a>
+               
+           </li>
+            <li class="search-box visible-md visible-lg">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="ti-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+            </li>
+            <li class="dropdown" dropdown="" is-open="status.isopenEmail">
+                <a href="javascript:;">
+                    <i class="ti-email"></i>
+                    <span class="badge badge-danger">3</span>
+                </a>
+               
+            </li>
+            <li class="dropdown" dropdown="" is-open="status.isopenBell">
+                <a href="">
+                    <i class="ti-bell"></i>
+                    <span class="badge badge-info">3</span>
+                </a>
+                
+            </li>
+        </ul> 
+
+        <ul class="nav-right pull-right list-unstyled">
+
+            <li class="dropdown text-normal nav-profile" dropdown="" is-open="status.isopenProfile">
+                <a href="javascript:;" class="dropdown-toggle" dropdown-toggle="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    <span class="hidden-xs">
+                        <span>username</span>
+                    </span>
+                </a>
+            </li>
+            <li class="dropdown langs text-normal ">
+              <a href="/logout">
+                            <i class="ti-export"></i>
+                            <span d>Log Out</span>
+                        </a>
+            </li>
+        </ul>
+    </div>
+
+</header>                
+</section>
+<div class="main-container">
+      <!-- Left nav -->
+    <aside id="nav-container" class="nav-container nav-fixed nav-vertical bg-dark">        
+<div class="nav-wrapper ng-scope">
+    <div class="slimScrollDiv" >
+        <ul  class="nav"  style="overflow: hidden; width: auto; height: 100%;">
+        <li class="active"><a href="/"> <i class="ti-home"></i>
+            <span ="Dashboard">Dashboard</span> </a></li>
+        <li>
+            <a href="/sales"><i class="ti-shopping-cart-full"></i>
+                <span>Sales</span></a>
+            <i class="ti-angle-double-right icon-has-ul"></i>
+       </li>
+        <li>
+            <a href="/items"><i class="ti-layout-column4"></i>
+                <span >Items</span></a>
+              <i class="ti-angle-double-right icon-has-ul"></i>
+       </li>
+        <li>
+            <a href="/customers"><i class="ti-user"></i>
+                <span >Customers</span>
+            </a>
+       <i class="ti-angle-double-right icon-has-ul"></i></li>
+        <li>
+            <a href="#table"><i class="fa fa-users"></i>
+                <span >Suppliers</span></a>
+          <i class="ti-angle-double-right icon-has-ul"></i></li>
+        <li>
+            <a href="#form"><i class="ti-pencil"></i>
+                <span ="Forms">Forms</span></a><i class="ti-angle-double-right icon-has-ul"></i></li>
+       <li>
+            <a href="#charts"><i class="ti-bar-chart"></i>
+                <span ="Charts">Charts</span></a>
+          <i class="ti-angle-double-right icon-has-ul"></i></li>
+        <li class="nav-task">
+            <a href="#tasks/tasks">
+                <i class="ti-check-box"></i>
+                <span ="Tasks">Tasks</span>
+                <span class="badge badge-danger main-badge ng-binding" data-ng-show="taskRemainingCount &gt; 0">7</span>
+            </a>
+        </li>
+        <li>
+            <a href="#mail"><i class="ti-email"></i>
+                <span ="Mail">Mail</span></a>
+          <i class="ti-angle-double-right icon-has-ul"></i>
+     </li>
+    </ul>
+</div>
+  </div>
+</aside>    
+     <div class="content-container">
+        <div class="page page-dashboard" >
+       <section class="panel panel-default">
+                  <div class="panel-body">
+    
+              <div class="row">
+        <div class="col-md-9">
+
+            <section class="panel panel-box">
+                <div class="panel-top bg-primary">
+                    <h3 class="ng-binding">   Customers list
+  </h3>
+                </div>
+                
+                <div class="list-justified-container">
+                                                     <h3>No Customer available at the moment</h3>
+                    
+  
+                </div>
+            </section>
+</div>
+        <div class="col-md-3">
+            <div class="list-justified-container">
+            <div class="panel panel-profile">
+                <div class="panel-heading bg-danger clearfix text-centered menu-header">
+                    <h3 class="ng-binding">        
+                        Actions 
+                    </h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-customer">
+                        <a href="/customers">
+                        <i class="ti-menu-alt"></i>
+                        Customers list
+                        <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="list-group-customer">
+                        <a href="/customers/add">
+                        <!-- <i class="ti-plus"></i> -->
+                        Add a customer
+                        </a>
+                    </li>
+                </ul>
+  </div>            </div>
+        </div>
+        
+
+        </div>
+    </div>
+        </div>
+    </section>
+     </div>
+    </div>
+
+ </div>
+ </div>
+
+
+</body>
+<script src="http://localhost/packages/kamaro/templates/js/jquery.js"></script>
+
+<script src="http://localhost/packages/kamaro/templates/js/bootstrap.min.js"></script>
+
+<!-- This is only necessary if you do Flash::overlay('...') -->
+<script>
+    $('#flash-overlay-modal').modal();
+</script>
+</html>
