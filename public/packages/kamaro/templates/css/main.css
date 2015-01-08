@@ -13821,3 +13821,55 @@ padding: 0 20px 5px;
 line-height: 1em;
 color: #1375A6;
 }
+
+.confirm-table{
+  padding: 3px;
+border: 1px solid #E1E2E2;
+text-align: left;
+vertical-align: top;
+background-color: #fff; 
+}
+.strongfy{
+  font-weight: 600;
+}
+
+/*jquery search style customization */
+    .ui-widget-content
+        {
+            border: 1px solid #eaeaea;
+            color: #222222;
+            background-color: #444;
+            background: rgb(0,0,0,0,0.6);
+        }
+        .ui-autocomplete
+        {
+            cursor: default;
+            position: absolute;
+        }
+        .ui-menu .ui-menu-item
+        {
+    display:block; 
+    text-decoration:none;
+    color:#000000; 
+    /*background-color:#FFFFFF; */
+    line-height:30px;
+    border-bottom-style:solid; 
+    border-bottom-width:1px; 
+    border-bottom-color:#CCCCCC; 
+    cursor:pointer;
+
+        }
+        .ui-menu .ui-menu-item a
+        {
+            color:#FFFFFF;
+        }
+        .ui-menu .ui-menu-item a:hover
+        {
+            display: block;
+            color: #eaeaea;
+            cursor: pointer;
+            background-color: #444 !important;
+            border:none;
+        }
+
+ /*End of the search auto complate style */

@@ -133,6 +133,7 @@ return array(
          'Kamaro\Customers\CustomersServiceProvider',
          'Kamaro\Templates\TemplatesServiceProvider',
          'Kamaro\Items\ItemsServiceProvider',
+         'Kamaro\Taxes\TaxesServiceProvider',
          'Kamaro\Sales\SalesServiceProvider',
          'Kamaro\Settings\SettingsServiceProvider',
          'Kamaro\Suppliers\SuppliersServiceProvider',
