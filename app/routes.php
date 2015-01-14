@@ -10,3 +10,7 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+
+Route::get('test',function(){
+	return var_dump(Cart::removeTaxes());
+});
